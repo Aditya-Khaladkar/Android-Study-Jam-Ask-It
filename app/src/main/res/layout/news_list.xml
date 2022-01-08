@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="11dp"
+    app:cardElevation="9dp"
+    android:layout_margin="20dp"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/ic_baseline_live_tv_24"
+            android:id="@+id/img_newsRequestList"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:id="@+id/txt_newsRequestList"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="it will fetch news from a server by
+http request using volley library"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

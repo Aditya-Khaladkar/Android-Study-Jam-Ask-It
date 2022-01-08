@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="11dp"
+    app:cardElevation="9dp"
+    android:layout_margin="20dp"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/introTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="I can detect object, I can manage your
+Expenses, I can Tell You what's currently going on in this world"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+</androidx.cardview.widget.CardView>

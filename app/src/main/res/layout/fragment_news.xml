@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.NewsFragment"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:singleLine="true"
+                app:checkedChip="@id/chip_all"
+                android:layout_marginTop="30dp"
+                android:layout_margin="20dp"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_all"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="all"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_business"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="business"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_sports"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="sports"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_politics"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="politics"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_technology"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="technology"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_startup"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="startup"/>
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
