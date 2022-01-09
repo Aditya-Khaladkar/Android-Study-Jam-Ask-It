@@ -11,20 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".ui.ExpenseAddedUI"
-            android:exported="false" />
-        <activity
-            android:name=".ui.MoneyTransferUI"
-            android:exported="false" />
-        <activity
-            android:name=".ui.SuccessUI"
-            android:exported="false" />
-        <activity
-            android:name=".ui.SuccessAnimation"
-            android:exported="false"
-            android:label="@string/title_activity_success_animation"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".ui.TotalExpenseActivity"
             android:exported="false" />
