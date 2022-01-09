@@ -15,7 +15,7 @@ class AddExpenseActivity : AppCompatActivity() {
     lateinit var ed_expensePrice: EditText
     lateinit var calendarView: CalendarView
     lateinit var ed_expenseDescription: EditText
-    lateinit var date: String
+    var date: String = ""
 
     private lateinit var mExpenseViewModel: ExpenseViewModel
 
